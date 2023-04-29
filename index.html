@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br class="xyz">
+<center>
+<h2>Contact Form</h2>
+<br>
+<form class="align" action="sendmail/sendmail.php" method="post" onsubmit="return checkform(this);">
+  <input type="text" name="name" id="" placeholder="Your Name" required>
+<br>
+  <input type="email" name="email" id="" placeholder="E-mail Address" required>
+<br>
+<input type="text" name="Contact Number" id="" placeholder="Contact Number" required>
+
+<br>
+  <textarea name="message" id="" cols="5" rows="5" placeholder="Type Your Message" required></textarea>
+<div class="capbox">
+<div id="CaptchaDiv"></div>
+<div class="capbox-inner">
+<br>
+<input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" placeholder="Type the captcha Generated above"><br>
+</div>
+</div>
+<br>
+<br>
+  <button class="send" type="submit">Submit</button>
+</form>
+<script src="index.js">   
+</script>
+
+
+</body>
+</html>
